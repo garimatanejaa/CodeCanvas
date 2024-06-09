@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import { animateScroll as scroll } from 'react-scroll';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Projects from './components/Projects';
+import Achievement from './components/Achievement';
+import Contact from './components/Contact';
+import Github from './components/Github';
+import Footer from './components/Footer';
+import Paper from './components/Paper';
+
+const scrollToTop = () => {
+  scroll.scrollToTop({
+    duration: 500,
+    smooth: 'easeInOutQuad',
+  });
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <ColorModeScript initialColorMode="dark" />
+      <Navbar />
+      <div id="about">
+        <About />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="paper">
+        <Paper />
+      </div>
+      <div id="achievements">
+        <Achievement />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Github />
+      <Footer />
+      <button 
+        onClick={scrollToTop} 
+        style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
+        Scroll to Top
+      </button>
+    </ChakraProvider>
   );
 }
 

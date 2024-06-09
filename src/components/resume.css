@@ -1,0 +1,7 @@
+.resume-link {
+    text-decoration: none;
+  }
+  
+  .resume-link:hover {
+    text-decoration: underline;
+  }
