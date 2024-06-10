@@ -62,8 +62,9 @@ function About() {
               href="files/Resume_GarimaTaneja.pdf"
               download="GarimaTaneja.pdf"
               className="resume-link"
+              style={{ color: 'blue' }}
             >
-              Click here to download my Resume ☞ 
+              Click here to download my Resume →
             </a>
           </div>
         </Container>

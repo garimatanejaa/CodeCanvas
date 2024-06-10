@@ -38,7 +38,7 @@ function Projects() {
     // Simulate fetching project data from an API
     setTimeout(() => {
       const dummyProjects = [
-        { id: 1, title: 'Portfolio (this)', description: 'A visually appealing portfolio website showcasing your achievements and projects with an elegant design, allowing you to present your merits in an aesthetically pleasing manner.', link: 'https://garimacodes.vercel.app/', source: 'https://github.com/garimatanejaa/resumee', skills: ['React', 'Chakra UI', 'JavaScript'] },
+        { id: 1, title: 'Portfolio (this)', description: 'A visually appealing portfolio website showcasing your achievements and projects with an elegant design, allowing you to present your merits in an aesthetically pleasing manner.                                                                                                                                          ', link: 'https://garimacodes.vercel.app/', source: 'https://github.com/garimatanejaa/resumee', skills: ['React', 'Chakra UI', 'JavaScript'] },
         { id: 2, title: 'CO2 Emission Predictor', description: 'Extensive information on various cars and their corresponding CO2 emissions was collected and utilized in the analysis, a robust model was constructed to accurately predict CO2 emissions. ject sought to contribute to the comprehension and mitigation of environmental impacts associated with vehicle emissions.', link: 'https://co2emmission-garimataneja.streamlit.app/', source: 'https://github.com/garimatanejaa/co2emmission', skills: ['Python', 'Numpy', 'Seaborn','Pandas'] },
         { id: 3, title: 'Interactive Data Visualization Application', description: 'This Java-based application is designed to help users create and display various types of charts, including pie charts, bar charts, and line graphs. The project leverages JavaFX and a variety of JavaFX libraries to deliver a dynamic and interactive data visualization experience.', link: 'https://github.com/garimatanejaa/datavis/tree/main', source: 'https://github.com/garimatanejaa/datavis/tree/main', skills: ['Java','JavaFx'] },
       ];
@@ -50,7 +50,7 @@ function Projects() {
   return (
     <Box id="projects" py={10} bg={bgcol}>
       <Container maxW="container.md">
-        <Heading as="h2" size="xl" mb={4}>My Projects</Heading>
+        <Heading as="h2" size="xl" mb={4}>My Projects 🗒</Heading>
         {loading ? (
           <SimpleGrid columns={[1, null, 2]} spacing={10}>
             {[...Array(4)].map((_, index) => (

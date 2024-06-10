@@ -22,7 +22,7 @@ function Paper({ loading = false }) {
     <Box id="papers" py={10} bg={bgcol}>
       <Container maxW="container.md">
         <Heading as="h2" size="xl" mb={4} >
-          Research Papers
+          Research Papers 📄
         </Heading>
         <VStack spacing={4} align="start">
           {loading ? (
