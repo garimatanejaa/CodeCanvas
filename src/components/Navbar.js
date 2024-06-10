@@ -36,46 +36,82 @@ function Navbar() {
 export default Navbar;*/
 // Navbar.js
 import React from 'react';
-import { Flex, Text, IconButton, useColorMode } from '@chakra-ui/react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { 
+  Flex, 
+  Text, 
+  IconButton, 
+  useColorMode, 
+  useDisclosure, 
+  Stack, 
+  Box 
+} from '@chakra-ui/react';
+import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div>
-    <Flex py={4} justify="center" align="center" bg={colorMode === 'dark' ? 'gray.800' : 'white'}>
-      <Flex align="center">
-        <a href="#about" style={{ textDecoration: 'none', margin: '0 10px' }}>
-          <Text _hover={{ textDecoration: 'underline' }}>About</Text>
-        </a>
-        <a href="#projects" style={{ textDecoration: 'none', margin: '0 10px' }}>
-          <Text _hover={{ textDecoration: 'underline' }}>Projects</Text>
-        </a>
-        <a href="#paper"  style={{ textDecoration: 'none', margin: '0 10px' }}>
-          <Text _hover={{ textDecoration: 'underline' }}>Research Paper</Text>
-        </a>
-        <a href="#achievements" style={{ textDecoration: 'none', margin: '0 10px' }}>
-          <Text _hover={{ textDecoration: 'underline' }}>Achievements</Text>
-        </a>
-        <a href="#contact"  style={{ textDecoration: 'none', margin: '0 10px' }}>
-          <Text _hover={{ textDecoration: 'underline' }}>Socials</Text>
-        </a>
+    <Box>
+      <Flex 
+        py={4} 
+        justify="space-between" 
+        align="center" 
+        bg={colorMode === 'dark' ? 'gray.800' : 'white'}
+        px={4}
+      >
+        <Box display={{ base: 'block', md: 'none' }}>
+          <IconButton
+            icon={isOpen ? <FaTimes /> : <FaBars />}
+            onClick={isOpen ? onClose : onOpen}
+            variant="ghost"
+            aria-label="Toggle Navigation"
+          />
+        </Box>
+        <Flex 
+          flex="1" 
+          justify="center" 
+          align="center"
+          display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
+        >
+          <Flex
+            direction={{ base: 'column', md: 'row' }}
+            align="center"
+            mt={{ base: 4, md: 0 }}
+          >
+            <a href="#about" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>About</Text>
+            </a>
+            <a href="#projects" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>Projects</Text>
+            </a>
+            <a href="#paper" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>Research Paper</Text>
+            </a>
+            <a href="#achievements" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>Achievements</Text>
+            </a>
+            <a href="#contact" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>Socials</Text>
+            </a>
+          </Flex>
+        </Flex>
+        <IconButton
+          icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
+          onClick={toggleColorMode}
+          variant="ghost"
+          aria-label="Toggle Dark Mode"
+          ml={2}
+        />
       </Flex>
-      <IconButton
-        icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
-        onClick={toggleColorMode}
-        variant="ghost"
-        aria-label="Toggle Dark Mode"
-        ml={2}
-      />
-    </Flex>
-    <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '0' }} />
-    </div>
+      <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '0' }} />
+    </Box>
   );
 }
 
 export default Navbar;
+
+
 
 
 
