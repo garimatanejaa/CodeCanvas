@@ -3,23 +3,23 @@
   "name": "Welcome to Garima's Portfolio",
   "icons": [
     {
-      "src": "garima copy.jpg",
+      "src": "garima copy.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "garima copy.jpg",
-      "type": "image/jpg",
+      "src": "garima copy.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "garima copy.jpg",
-      "type": "image/jpg",
+      "src": "garima copy.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#000000"
 }
