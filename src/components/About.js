@@ -35,6 +35,7 @@ function About() {
   import { Box, Heading, Text, Container, useColorModeValue } from '@chakra-ui/react';
   import './resume.css';
   import logo from './garima copy.jpg';
+  import resumePDF from './garima_resume.pdf';
   
   function About() {
     // Directly using the color value in the Box component
@@ -59,8 +60,8 @@ function About() {
           <br /> {/* Adds a line break for spacing */}
           <div className="resume-download">
             <a
-              href="files/Resume_GarimaTaneja.pdf"
-              download="GarimaTaneja.pdf"
+              href={resumePDF}
+              download="garima_resume.pdf"
               className="resume-link"
               style={{ color: 'blue' }}
             >
