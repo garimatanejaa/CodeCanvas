@@ -57,7 +57,7 @@ function Navbar() {
         py={4} 
         justify="space-between" 
         align="center" 
-        bg={colorMode === 'dark' ? 'gray.800' : 'white'}
+        bg={colorMode === 'dark' ? 'gray.900' : 'white'}
         px={4}
       >
         <Box display={{ base: 'block', md: 'none' }}>
@@ -90,6 +90,9 @@ function Navbar() {
             </a>
             <a href="#achievements" style={{ textDecoration: 'none', margin: '0 10px' }}>
               <Text _hover={{ textDecoration: 'underline' }}>Achievements</Text>
+            </a>
+            <a href="#leetcodestats" style={{ textDecoration: 'none', margin: '0 10px' }}>
+              <Text _hover={{ textDecoration: 'underline' }}>Profiles</Text>
             </a>
             <a href="#contact" style={{ textDecoration: 'none', margin: '0 10px' }}>
               <Text _hover={{ textDecoration: 'underline' }}>Socials</Text>

@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Github from './components/Github';
 import Footer from './components/Footer';
 import Paper from './components/Paper';
+import LeetcodeStats from'./components/LeetcodeStats';
 
 const scrollToTop = () => {
   scroll.scrollToTop({
@@ -34,10 +35,11 @@ function App() {
       <div id="achievements">
         <Achievement />
       </div>
+      <LeetcodeStats /> 
+      <Github />
       <div id="contact">
         <Contact />
       </div>
-      <Github />
       <Footer />
       <button 
         onClick={scrollToTop} 
