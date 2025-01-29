@@ -18,7 +18,7 @@
               Hi, I'm Garima Taneja, a pre-final year B.Tech Computer Science student at Amity University. I am a Maching Learning Cohort lead @Codess.Cafe and I am also an upcoming summer intern 2025 @Adobe . I plan on continuing my career as a software engineer / developer for the forseeable future. 
               I have worked on a variety of projects and have a varied techstack. 
               I am an avid reader and would love some fantasy fiction book recommendations. 
-              I play table tennis and engage in other creative actitvities like painting ocasionallly.
+              I play table tennis and engage in other creative actitvities like painting occasionally.
               Well, that's me!  
             </Text>
             <div style={{ marginLeft: '20px' }}>
