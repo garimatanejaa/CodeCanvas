@@ -1,0 +1,26 @@
+.runner-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.runner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: fit-content;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.tech-icon {
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.runner-container:hover .runner {
+    animation-play-state: paused;
+}

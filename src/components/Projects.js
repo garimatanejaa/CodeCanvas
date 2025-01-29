@@ -1,31 +1,4 @@
-/*import React from 'react';
-import { Box, Heading, SimpleGrid, Text, Container } from '@chakra-ui/react';
 
-function Projects() {
-  return (
-    <Box id="projects" py={10}>
-      <Container maxW="container.md">
-        <Heading as="h2" size="xl" mb={4}>My Projects</Heading>
-        <SimpleGrid columns={[1, null, 2]} spacing={10}>
-          <Box p={5} shadow="md" borderWidth="1px">
-            <Heading fontSize="xl">Project 1</Heading>
-            <Text mt={4}>Description of project 1.</Text>
-          </Box>
-          <Box p={5} shadow="md" borderWidth="1px">
-            <Heading fontSize="xl">Project 2</Heading>
-            <Text mt={4}>Description of project 2.</Text>
-          </Box>
-          <Box p={5} shadow="md" borderWidth="1px">
-            <Heading fontSize="xl">Data Visualisation Application</Heading>
-            <Text mt={4}>Description of project 3.</Text>
-          </Box>
-        </SimpleGrid>
-      </Container>
-    </Box>
-  );
-}
-
-export default Projects;*/
 import React, { useState, useEffect } from 'react';
 import { Box, Heading, SimpleGrid, Text, Container, Skeleton, Link, Code, Flex, useColorModeValue } from '@chakra-ui/react';
 

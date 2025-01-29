@@ -10,6 +10,7 @@ import Github from './components/Github';
 import Footer from './components/Footer';
 import Paper from './components/Paper';
 import LeetcodeStats from'./components/LeetcodeStats';
+import Skills from './components/Skills';
 
 const scrollToTop = () => {
   scroll.scrollToTop({
@@ -25,6 +26,9 @@ function App() {
       <Navbar />
       <div id="about">
         <About />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
       <div id="projects">
         <Projects />
@@ -44,7 +48,7 @@ function App() {
       <button 
         onClick={scrollToTop} 
         style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
-        Scroll to Top
+        Scroll to Top ↑
       </button>
     </ChakraProvider>
   );
